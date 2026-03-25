@@ -6,24 +6,41 @@
 
 <title>Dépannage informatique Courcelles | PAE-SERVICES</title>
 
+<meta name="description" content="Dépannage informatique à domicile à Courcelles. Réparation PC, virus, optimisation et création de sites internet. Intervention rapide.">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 
 <style>
-body {margin:0;font-family:'Poppins',sans-serif;background:#f4f7fb;color:#333;}
-
-.hero {
-    background:linear-gradient(120deg,#0b3c5d,#1d6fa5);
-    color:white;
-    text-align:center;
-    padding:80px 20px;
+body {
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fb;
+    color:#333;
 }
 
-.logo {width:110px;}
+/* HERO AVEC IMAGE */
+.hero {
+    background: linear-gradient(rgba(10,40,70,0.85), rgba(10,40,70,0.85)),
+    url('https://images.unsplash.com/photo-1581090700227-1e8b1c0c0b8b');
+    background-size: cover;
+    color:white;
+    text-align:center;
+    padding:90px 20px;
+}
 
-.hero h1 {font-size:40px;margin:10px 0;}
+.logo {
+    width:110px;
+}
 
-.hero p {font-size:18px;}
+.hero h1 {
+    font-size:38px;
+}
 
+.hero p {
+    font-size:18px;
+}
+
+/* BOUTON PRINCIPAL */
 .call-btn {
     display:inline-block;
     background:#ff7a00;
@@ -44,7 +61,7 @@ body {margin:0;font-family:'Poppins',sans-serif;background:#f4f7fb;color:#333;}
     font-weight:bold;
 }
 
-/* SECTIONS */
+/* SECTION */
 .container {
     max-width:1100px;
     margin:auto;
@@ -54,7 +71,6 @@ body {margin:0;font-family:'Poppins',sans-serif;background:#f4f7fb;color:#333;}
 h2 {
     text-align:center;
     color:#0b3c5d;
-    margin-bottom:30px;
 }
 
 /* SERVICES */
@@ -68,9 +84,21 @@ h2 {
     background:white;
     padding:25px;
     border-radius:12px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    border-top:4px solid #ff7a00;
     text-align:center;
+    border-top:4px solid #ff7a00;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.service:hover {
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* IMAGE SECTION */
+.image-section img {
+    width:100%;
+    border-radius:12px;
 }
 
 /* AVIS */
@@ -86,7 +114,7 @@ h2 {
 /* CONFIANCE */
 .trust {
     background:#eef3f8;
-    padding:40px;
+    padding:30px;
     border-radius:10px;
 }
 
@@ -134,20 +162,23 @@ button {
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
 <img src="logo.png" class="logo">
-<h1>PAE-SERVICES</h1>
 
-<p>Dépannage informatique à domicile à Courcelles</p>
-<p><b>Intervention rapide • Devis gratuit • Service professionnel</b></p>
+<h1>Dépannage informatique rapide à Courcelles</h1>
+
+<p>Intervention rapide • Devis gratuit • Service professionnel</p>
 
 <a href="tel:0451020778" class="call-btn">📞 Appeler maintenant</a>
 </div>
 
+<!-- BANDE -->
 <div class="banner">
-Intervention le jour même possible à Courcelles
+Intervention le jour même possible
 </div>
 
+<!-- SERVICES -->
 <div class="container">
 <h2>Nos services</h2>
 
@@ -160,6 +191,13 @@ Intervention le jour même possible à Courcelles
 </div>
 </div>
 
+<!-- IMAGE -->
+<div class="container image-section">
+<h2>Intervention rapide</h2>
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+</div>
+
+<!-- AVIS -->
 <div class="container">
 <h2>⭐ Avis clients</h2>
 
@@ -167,15 +205,17 @@ Intervention le jour même possible à Courcelles
 <div class="review">⭐⭐⭐⭐⭐ Très professionnel, je recommande</div>
 </div>
 
+<!-- CONFIANCE -->
 <div class="container trust">
 <h2>Pourquoi nous choisir ?</h2>
 
 <p>✔ Intervention rapide</p>
+<p>✔ Intervention le jour même possible</p>
 <p>✔ Devis gratuit</p>
-<p>✔ Service fiable</p>
-<p>✔ Clients satisfaits</p>
+<p>✔ Service fiable et professionnel</p>
 </div>
 
+<!-- CONTACT -->
 <div class="container">
 <h2>Contact</h2>
 
@@ -198,6 +238,7 @@ width="100%" height="300"></iframe>
 </div>
 </div>
 
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/32451020778">💬</a>
 
 </body>
