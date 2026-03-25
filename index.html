@@ -6,39 +6,44 @@
 
 <title>Dépannage informatique Courcelles | PAE-SERVICES</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin:0;
     font-family:'Poppins',sans-serif;
-    background:#f4f7fb;
+    background:#f5f7fa;
+    color:#333;
 }
 
-/* HERO */
+/* HEADER */
 .hero {
-    background: linear-gradient(120deg, #0b3c5d, #1d6fa5);
+    background:#0b3c5d;
     color:white;
     text-align:center;
-    padding:100px 20px;
+    padding:70px 20px;
+}
+
+.logo {
+    width:100px;
 }
 
 .hero h1 {
-    font-size:48px;
+    margin:10px 0;
 }
 
 .hero p {
-    font-size:20px;
+    color:#ddd;
 }
 
 /* BOUTONS */
 .btn {
-    padding:15px 25px;
-    border-radius:8px;
+    padding:12px 20px;
+    border-radius:6px;
     text-decoration:none;
-    margin:10px;
+    margin:5px;
     display:inline-block;
-    font-weight:bold;
+    font-weight:500;
 }
 
 .btn-orange {
@@ -51,11 +56,11 @@ body {
     color:#0b3c5d;
 }
 
-/* SERVICES */
+/* SECTION */
 .container {
-    max-width:1100px;
+    max-width:1000px;
     margin:auto;
-    padding:60px 20px;
+    padding:40px 20px;
 }
 
 h2 {
@@ -63,117 +68,129 @@ h2 {
     color:#0b3c5d;
 }
 
+/* SERVICES */
 .services {
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:15px;
 }
 
 .service {
     background:white;
-    padding:30px;
-    border-radius:12px;
+    padding:20px;
+    border-radius:8px;
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
-    border-top:5px solid #ff7a00;
-    transition:0.3s;
-}
-
-.service:hover {
-    transform:translateY(-10px);
-}
-
-/* BANNER */
-.banner {
-    background:#ff7a00;
-    color:white;
-    text-align:center;
-    padding:40px;
-    font-size:24px;
-    font-weight:bold;
+    border-top:3px solid #ff7a00;
 }
 
 /* AVIS */
-.review-box {
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    flex-wrap:wrap;
-}
-
 .review {
     background:white;
-    padding:25px;
-    border-radius:12px;
-    max-width:400px;
+    padding:15px;
+    border-radius:8px;
+    margin:10px;
 }
 
-/* MAP */
-iframe {
-    border-radius:12px;
+/* GRID */
+.grid {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+input, textarea {
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button {
+    background:#ff7a00;
+    color:white;
+    padding:12px;
+    border:none;
+    border-radius:5px;
 }
 
 /* WHATSAPP */
 .whatsapp {
     position:fixed;
-    bottom:20px;
-    right:20px;
+    bottom:15px;
+    right:15px;
     background:#25D366;
-    padding:15px;
+    padding:12px;
     border-radius:50%;
     color:white;
-    font-size:22px;
 }
 
 /* MOBILE */
 @media(max-width:800px){
-    .hero h1 {font-size:32px;}
+    .grid {
+        grid-template-columns:1fr;
+    }
 }
 </style>
 </head>
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
-<img src="logo.png" style="width:120px;">
+<img src="logo.png" class="logo">
 <h1>PAE-SERVICES</h1>
 <p>Dépannage informatique à domicile</p>
 <p>Courcelles & Belgique</p>
 
-<a class="btn btn-orange" href="tel:0451020778">📞 Appeler</a>
-<a class="btn btn-white" href="mailto:p.zastavni@gmail.com">✉️ Email</a>
+<a class="btn btn-orange" href="tel:0451020778">Appeler</a>
+<a class="btn btn-white" href="mailto:p.zastavni@gmail.com">Email</a>
 </div>
 
+<!-- SERVICES -->
 <div class="container">
 <h2>Nos services</h2>
 
 <div class="services">
-<div class="service">🔧 Réparation PC</div>
-<div class="service">🛡️ Virus</div>
-<div class="service">⚡ Optimisation</div>
-<div class="service">🏠 À domicile</div>
-<div class="service">🌐 Création de sites internet</div>
+<div class="service">Réparation PC / Portable</div>
+<div class="service">Suppression de virus</div>
+<div class="service">Optimisation PC lent</div>
+<div class="service">Intervention à domicile</div>
+<div class="service">Création de sites internet</div>
 </div>
 </div>
 
-<div class="banner">
-🚀 Intervention rapide - Devis gratuit
-</div>
-
+<!-- AVIS -->
 <div class="container">
-<h2>⭐ Avis clients</h2>
+<h2>Avis clients</h2>
 
-<div class="review-box">
-<div class="review">⭐⭐⭐⭐⭐ Service rapide !</div>
+<div class="review">⭐⭐⭐⭐⭐ Service rapide et efficace</div>
 <div class="review">⭐⭐⭐⭐⭐ Très professionnel</div>
 </div>
+
+<!-- CONTACT + MAP -->
+<div class="container">
+<h2>Contact</h2>
+
+<div class="grid">
+
+<div>
+<form action="mailto:p.zastavni@gmail.com" method="post" enctype="text/plain">
+<input type="text" placeholder="Nom" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Votre message"></textarea>
+<button type="submit">Envoyer</button>
+</form>
 </div>
 
-<div class="container">
-<h2>📍 Localisation</h2>
+<div>
+<iframe 
+src="https://www.google.com/maps?q=Rue+du+Temple+20,+6180+Courcelles,+Belgique&output=embed"
+width="100%" height="300">
+</iframe>
+</div>
 
-<iframe src="https://www.google.com/maps?q=Rue+du+Temple+20,+6180+Courcelles,+Belgique&output=embed"
-width="100%" height="350"></iframe>
+</div>
 </div>
 
 <a class="whatsapp" href="https://wa.me/32451020778">💬</a>
