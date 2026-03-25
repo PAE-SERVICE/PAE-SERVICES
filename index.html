@@ -4,151 +4,158 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Dépannage informatique Courcelles | Réparation PC - PAE-SERVICES</title>
+<title>PAE-SERVICES | Dépannage informatique Courcelles</title>
 
-<meta name="description" content="Dépannage informatique à domicile à Courcelles. Réparation PC, virus, optimisation et création de sites internet. Intervention rapide.">
+<meta name="description" content="Dépannage informatique à domicile à Courcelles. Réparation PC, virus, optimisation et création de sites internet. Devis gratuit.">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 body {
-    margin:0;
-    font-family:'Poppins',sans-serif;
-    background:#f5f7fa;
-    color:#333;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #eef2f6;
 }
 
 /* HERO */
 .hero {
-    background:#0b3c5d;
-    color:white;
-    text-align:center;
-    padding:70px 20px;
+    background: linear-gradient(rgba(10,40,70,0.85), rgba(10,40,70,0.85)),
+    url('https://images.unsplash.com/photo-1581090700227-1e8b1c0c0b8b');
+    background-size: cover;
+    color: white;
+    padding: 90px 20px;
+    text-align: center;
 }
 
 .logo {
-    width:100px;
+    width: 110px;
 }
 
 .hero h1 {
-    margin:10px 0;
+    font-size: 42px;
 }
 
-.hero p {
-    color:#ddd;
-}
-
-/* GROS BOUTON */
-.call-btn {
-    display:block;
-    background:#ff7a00;
-    color:white;
-    padding:15px;
-    margin:20px auto;
-    width:260px;
-    border-radius:8px;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-/* BOUTONS */
 .btn {
-    padding:10px 18px;
-    border-radius:6px;
-    text-decoration:none;
-    margin:5px;
-    display:inline-block;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+.btn-orange {
+    background: #ff7a00;
+    color: white;
 }
 
 .btn-white {
-    background:white;
-    color:#0b3c5d;
-}
-
-/* BANDE */
-.banner {
-    background:#ff7a00;
-    color:white;
-    text-align:center;
-    padding:15px;
-    font-weight:bold;
+    background: white;
+    color: #0b3c5d;
 }
 
 /* SECTION */
 .container {
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 20px;
 }
 
 h2 {
-    text-align:center;
-    color:#0b3c5d;
+    text-align: center;
+    color: #1d6fa5;
 }
 
 /* SERVICES */
 .services {
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
 }
 
 .service {
-    background:white;
-    padding:20px;
-    border-radius:8px;
-    text-align:center;
-    border-left:4px solid #ff7a00;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+/* COMPAT */
+.compat {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.compat img {
+    width: 50px;
 }
 
 /* AVIS */
+.review-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .review {
-    background:white;
-    padding:15px;
-    border-radius:8px;
-    margin:10px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* GRID */
 .grid {
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 input, textarea {
-    width:100%;
-    padding:10px;
-    margin:8px 0;
-    border-radius:5px;
-    border:1px solid #ccc;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
 }
 
 button {
-    background:#ff7a00;
-    color:white;
-    padding:12px;
-    border:none;
-    border-radius:5px;
-    width:100%;
-    font-size:16px;
+    background: #ff7a00;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
 }
 
 /* WHATSAPP */
 .whatsapp {
-    position:fixed;
-    bottom:15px;
-    right:15px;
-    background:#25D366;
-    padding:12px;
-    border-radius:50%;
-    color:white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
 }
 
 /* MOBILE */
-@media(max-width:800px){
+@media(max-width: 800px){
     .grid {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
     }
 }
 </style>
@@ -158,25 +165,17 @@ button {
 
 <!-- HERO -->
 <div class="hero">
+
 <img src="logo.png" class="logo">
 
-<h1>PAE-SERVICES</h1>
-<p>Dépannage informatique à domicile à Courcelles</p>
+<h1>Dépannage informatique à domicile</h1>
+<p>Courcelles & Belgique</p>
 
-<p style="font-weight:bold;">
-Disponible rapidement - Intervention le jour même possible
-</p>
+<p>✔ Intervention rapide ✔ Devis gratuit ✔ Service à domicile</p>
 
-<a href="tel:0451020778" class="call-btn">
-📞 Appel immédiat
-</a>
-
+<a class="btn btn-orange" href="tel:0451020778">📞 Appeler</a>
 <a class="btn btn-white" href="mailto:p.zastavni@gmail.com">✉️ Email</a>
-</div>
 
-<!-- BANDE -->
-<div class="banner">
-Intervention rapide à Courcelles et alentours
 </div>
 
 <!-- SERVICES -->
@@ -184,51 +183,87 @@ Intervention rapide à Courcelles et alentours
 <h2>Nos services</h2>
 
 <div class="services">
-<div class="service">Réparation PC / Portable toutes marques</div>
-<div class="service">Suppression de virus et sécurisation</div>
-<div class="service">PC lent ? On le rend rapide comme neuf</div>
-<div class="service">Intervention à domicile</div>
-<div class="service">Création de sites internet</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/2920/2920349.png">
+<p>Réparation PC / Portable</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+<p>Suppression de virus</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
+<p>Optimisation PC lent</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/25/25694.png">
+<p>Intervention à domicile</p>
+</div>
+
+<div class="service">
+<img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png">
+<p>Création de mini sites internet</p>
+</div>
+
+</div>
+</div>
+
+<!-- COMPAT -->
+<div class="container">
+<h2>Compatibilité</h2>
+
+<div class="compat">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732221.png">
+<img src="https://cdn-icons-png.flaticon.com/512/732/732212.png">
+<img src="https://cdn-icons-png.flaticon.com/512/888/888857.png">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png">
 </div>
 </div>
 
 <!-- AVIS -->
 <div class="container">
-<h2>Avis clients</h2>
+<h2>⭐ Avis clients</h2>
 
-<div class="review">⭐⭐⭐⭐⭐ Service rapide et efficace à Courcelles</div>
-<div class="review">⭐⭐⭐⭐⭐ Très professionnel, je recommande</div>
+<div class="review-box">
+
+<div class="review">
+<p>⭐⭐⭐⭐⭐</p>
+<p>Service rapide et efficace !</p>
 </div>
 
-<!-- CONFIANCE -->
-<div class="container">
-<h2>Pourquoi nous choisir ?</h2>
+<div class="review">
+<p>⭐⭐⭐⭐⭐</p>
+<p>Très professionnel, je recommande !</p>
+</div>
 
-<p>✔ Intervention rapide à domicile</p>
-<p>✔ Devis gratuit</p>
-<p>✔ Service professionnel</p>
-<p>✔ Plusieurs clients satisfaits à Courcelles</p>
+</div>
 </div>
 
 <!-- CONTACT + MAP -->
 <div class="container">
-<h2>Contact</h2>
+<h2>Localisation & Contact</h2>
 
 <div class="grid">
 
 <div>
+<p>📍 Rue du Temple 20, 6180 Courcelles</p>
+
 <form action="mailto:p.zastavni@gmail.com" method="post" enctype="text/plain">
 <input type="text" placeholder="Nom" required>
 <input type="email" placeholder="Email" required>
 <textarea placeholder="Votre message"></textarea>
-<button type="submit">Envoyer votre demande</button>
+<button type="submit">Envoyer</button>
 </form>
 </div>
 
 <div>
 <iframe 
 src="https://www.google.com/maps?q=Rue+du+Temple+20,+6180+Courcelles,+Belgique&output=embed"
-width="100%" height="300">
+width="100%" height="350" style="border:0;border-radius:10px;">
 </iframe>
 </div>
 
